@@ -26,7 +26,7 @@ export const Footer=()=>{
                     
                     </p>
 
-                    <div className="flex border items-center justify-center gap-5 mt-8 ">
+                    <div className="flex  items-center justify-center gap-5 mt-8 ">
 
                         {SOCIAL_MEDIA_LINKS.map((item)=>(
                             <div className='flex justify-center items-center w-12 h-12 border rounded-full'>
@@ -46,10 +46,10 @@ export const Footer=()=>{
                 <div className='flex flex-1 justify-start items-center
                 gap-4 font-montserrat cursor-pointer'>
                     {/* <img src={copyRight} alt="" className="rounded-full m-0" widht={20} height={20} /> */}
-                    <p>Copyright. All rights reserved @ 2024</p>
+                    <p>Copyright. All rights reserved@ 2024</p>
                 </div>
 
-                <p className="font-montserrat cursor-pointer">
+                <p className="font-montserrat cursor-pointer ml-1">
                     Terms & Conditions.
                 </p>
                 </div>
