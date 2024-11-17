@@ -1,4 +1,5 @@
 import { PROJECTS } from "../Constants"
+import {motion} from 'motion/react'
 import userLogo from '../assets/bgImages/inzamamReactJs.jpeg'
 export const Projects=()=>{
     return(
@@ -7,11 +8,18 @@ export const Projects=()=>{
            
            
            {/* container second image */}
-            <div className=" border-red-500 max-w-[400px] md:max-w-[900px] flex flex-wrap p-4 md:px-10 gap-4 items-center justify-start mt-8">
+            <motion.div 
+            
+        
+            className=" border-red-500 max-w-[400px] md:max-w-[900px] flex flex-wrap p-4 md:px-10 gap-4 items-center justify-start mt-8">
                
                 {PROJECTS.map((item,index)=>(
-            <a href={item.link} target="_black">
-                    <div key={index} className=" relative rounded-xl min-w-[200px]  max-md:w-[400px]   border border-neutral-500 ">
+            <a href={item.link} target="_blank">
+                    <motion.div
+                    initial={{opacity:0,y:40}}
+                    whileInView={{opacity:1,y:0}}
+                    transition={{duration:.6}}
+                    key={index} className=" relative rounded-xl min-w-[200px]  max-md:w-[400px]   border border-neutral-500 ">
 
 
               
@@ -33,10 +41,10 @@ viewBox="0 0 1920 1920"  xmlns="http://www.w3.org/2000/svg" id="Magenta-Blue-Gre
 
 
 
-                    </div>
+                    </motion.div>
             </a>
                 ))}
-            </div>
+            </motion.div>
         </div>
     )
 }
