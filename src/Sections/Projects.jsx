@@ -19,7 +19,7 @@ export const Projects=()=>{
                     initial={{opacity:0,y:40}}
                     whileInView={{opacity:1,y:0}}
                     transition={{duration:.6}}
-                    key={index} className=" relative rounded-xl min-w-[200px]  max-md:w-[400px]   border border-neutral-500 ">
+                    key={index} className=" relative rounded-xl  lg:w-[100%] md:min-w-[150px]  max-md:w-[20rem] border border-neutral-500 ">
 
 
               

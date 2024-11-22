@@ -12,11 +12,11 @@ function App() {
   
 
   return (
-  <div className=" border-red-500 w-[100%] h-[100%] p-4  bg-hero bg-cover bg-center bg-fixed">
+  <div className=" border-green-500  w-[100%] h-[100%] p-4  bg-hero bg-cover bg-center bg-fixed">
 
 <Toaster />
 
-      <div className="flex flex-col  border-blue-500 items-center ">
+      <div className="flex flex-col  border-blue-500 items-center  ">
         <Header/>
         <Hero/>
 

@@ -50,17 +50,18 @@ export const Hero=()=>{
     return(
         
         <motion.div
-      
-
         initial={{opacity:0,y:40}}
         whileInView={{opacity:1,y:0}}
         transition={{duration:.6}}
-        className=" border-green-500 max-md:flex-col-reverse flex flex-1 flex-row items-center justify-center w-[100%] md:space-x-[100px] max-md:space-y-[25px] max-md:mb-20 md:mt-32 mb-3 max-md:mt-8 ">
+        className=" border-green-500  max-md:flex-col-reverse flex flex-1 flex-row items-center justify-center w-[100%] md:space-x-[100px] max-md:space-y-[25px] max-md:mb-20 md:mt-32 mb-3 max-md:mt-8 ">
 
                 {/* left main div */}
-            <div className=" flex-col  p-4 w-[40rem]">
+            <div className=" flex-col  p-4 md:w-[40rem] w-[24rem]  ">
 
-                <motion.span id='hero' className=" text-transparent bg-clip-text bg-gradient-to-br from-green-600 to-purple-800 border-blue-500 max-w-[20rem] text-7xl font-semibold ">
+                <motion.span id='hero' className=" text-transparent bg-clip-text bg-gradient-to-br
+                 from-green-600 to-purple-800
+                  border-blue-500  text-7xl
+                   font-semibold ">
                     
                 {/* Inzamam Khan */}
                     {displayMyName}
@@ -90,7 +91,7 @@ export const Hero=()=>{
             initial={{scale:1}}
             whileHover={{scale:1.1}}
             transition={{duration:.3}}
-            className=" rounded-xl w-[350px] max-md:w-[80vW]  ">
+            className=" rounded-xl w-[350px] max-md:w-[80vW] cursor-pointer ">
                 <img src={userLogo} alt="" className=' rounded-xl '  />
 
             </motion.div>

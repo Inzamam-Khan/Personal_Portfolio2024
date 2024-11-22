@@ -7,8 +7,8 @@ export const Header = () => {
 
     const [isOpen, setIsOpen] = useState(false)
     return (<>
-        <div id="#header" className="container fixed p-4  border-red-500 
-        flex items-center justify-center max-md:justify-start w-full min-h-[50px] mb-5 text-center z-50 md:backdrop-blur-md">
+        <div id="#header" className=" container fixed p-4  border-red-500 
+        flex items-center justify-center max-md:justify-start w-[90%] lg:w-full min-h-[50px] mb-5 text-center z-50 md:backdrop-blur-md">
 
 
             {/* menu items */}
