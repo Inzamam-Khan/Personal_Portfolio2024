@@ -181,11 +181,11 @@ export const SOCIAL_MEDIA_LINKS = [
   },
   
   {
-    href: "https://github.com/",
+    href: "https://github.com/Inzamam-Khan",
     icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/in/inzamam-khan-58bb1a211/",
     icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
   },
 ];

@@ -55,16 +55,17 @@ export const Footer=()=>{
                     <div className="flex  items-center justify-center gap-5 mt-8 ">
 
                         {SOCIAL_MEDIA_LINKS.map((item)=>(
-                            <motion.div 
+                            <motion.a href={item.href} target="_blank"
                             
            initial={{opacity:0,y:40}}
            whileInView={{opacity:1,y:0}}
            transition={{duration:.5,delay:.220,ease:"easeInOut"}}
                             className='flex justify-center items-center w-12 h-12 border rounded-full'>
                                 {item.icon} 
-                            </motion.div>
+                            </motion.a>
                         ))}
                     </div>
+                    
                 </div>
 
                                 {/* second box i.e link part */}
